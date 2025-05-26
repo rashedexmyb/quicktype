@@ -836,7 +836,7 @@ export class DartRenderer extends ConvenienceRenderer {
         this.emitDescription(this.descriptionForType(c));
 
         this.emitLine("@freezed");
-        this.emitBlock(["class ", className, " with _$", className], () => {
+        this.emitBlock(["sealed class ", className, " with _$", className], () => {
             if (c.getProperties().size === 0) {
                 this.emitLine(
                     "const factory ",
