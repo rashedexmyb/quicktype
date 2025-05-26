@@ -68,4 +68,5 @@ export const keywords = [
     "toJson",
     "fromMap",
     "toMap",
+    "sealed",
 ] as const;
